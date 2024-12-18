@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div className="min-h-[80vh] w-[67vw]   mt-20 mb-10 flex flex-col justify-around gap-5">
-      <h1 className="font-inter text-4xl">Projects</h1>
+      <h1 className="font-inter font-extrabold text-4xl">Projects</h1>
       <div className="flex justify-center items-center gap-4">
         <Link href="/projects">
           <Card className="w-[33vw] flex flex-col gap-4 border">
@@ -45,7 +45,7 @@ export default function Projects() {
           </Card>
         </Link>
       </div>
-      <Link className="px-6 py-3 rounded-md font-bold bg-black text-white dark:text-black w-32 flex items-center justify-center dark:bg-white" href="/projects">View All</Link>
+      <Link className="px-6 py-3 rounded-md font-bold bg-black text-white dark:text-black w-28 flex items-center justify-center dark:bg-white" href="/projects">View All</Link>
     </div>
   );
 }

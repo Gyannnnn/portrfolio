@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="flex items-center justify-center">
             <Link
               href="/"
-              className="sm:text-3xl text-2xl text-primary font-sans non-italic  hover:cursor-pointer"
+              className="sm:text-5xl text-2xl text-primary font-sans non-italic  hover:cursor-pointer"
             >
               <span className="text-green-500 font-extrabold">G</span>
               <span className="text-yellow-500 font-extrabold">Y</span>
@@ -63,7 +63,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="flex items-center sm:gap-8 gap-2">
+      <div className="flex items-center sm:gap-4 gap-2">
         <Link
           className="text-lg text-primary"
           href="https://github.com/Gyannnnn"
