@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import {  Sun } from "lucide-react"
-import { useTheme } from "next-themes"
+import * as React from "react";
+import { Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 import { WiMoonAltNew } from "react-icons/wi";
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
 
   return (
     <div
@@ -19,5 +19,5 @@ export function ModeToggle() {
         <WiMoonAltNew className="h-6 w-6 text-white font-light text-black text-sm" />
       )}
     </div>
-  )
+  );
 }
