@@ -41,21 +41,21 @@ export default function Navbar() {
               <span className="text-red-500 font-extrabold">N</span>
             </Link>
           </div>
-          <div className="flex justify-center items-center sm:gap-10 max-sm:gap-2">
+          <div className="flex justify-center items-center sm:gap-8 max-sm:gap-2">
             <Link
-              className="font-extralight max-sm:font-light text-primary hover:underline underline-offset-2 max-sm:text-sm"
+              className="font-extralight max-sm:font-bold text-primary hover:underline underline-offset-2 max-sm:text-sm"
               href="/about"
             >
               About
             </Link>
             <Link
-              className="font-extralight max-sm:font-light text-primary hover:underline underline-offset-2 max-sm:text-sm"
+              className="font-extralight max-sm:font-bold text-primary hover:underline underline-offset-2 max-sm:text-sm"
               href="/projects"
             >
               Projects
             </Link>
             <Link
-              className="font-extralight max-sm:font-light text-primary hover:underline underline-offset-2 max-sm:text-sm"
+              className="font-extralight max-sm:font-bold text-primary hover:underline underline-offset-2 max-sm:text-sm"
               href="/contact"
             >
               Contact
@@ -63,7 +63,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="flex items-center sm:gap-10 gap-2">
+      <div className="flex items-center sm:gap-8 gap-2">
         <Link
           className="text-lg text-primary"
           href="https://github.com/Gyannnnn"

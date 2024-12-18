@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { WiMoonAltNew } from "react-icons/wi";
+import { GiMoon } from "react-icons/gi";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -16,7 +16,7 @@ export function ModeToggle() {
       {theme === "dark" ? (
         <Sun className="h-6 w-6 text-sm text-primary " />
       ) : (
-        <WiMoonAltNew className="h-6 w-6  font-light text-black text-sm" />
+        <GiMoon className="h-6 w-6  font-light text-black text-sm" />
       )}
     </div>
   );

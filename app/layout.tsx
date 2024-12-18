@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gyanranjan Patra | Portfolio",
+  title: "Gyanranjan Patra ",
   description: "This Is The Portfolio of Gyanranjan Patra",
 };
 
