@@ -26,7 +26,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="bg-transparent bg-secondary text-white h-16 flex justify-around ">
+    <div className="bg-secondary text-white h-16 flex justify-around ">
       <div className="flex items-center justify-center">
         <div className="flex justify-center items-center gap-2 sm:gap-10">
           <Link
@@ -36,19 +36,19 @@ export default function Navbar() {
            <span className="text-green-500 font-extrabold">G</span><span className="text-yellow-500 font-extrabold">Y</span><span className="font-sans italic font-extrabold line-through">A</span><span className="text-red-500 font-extrabold">N</span>
           </Link>
           <Link
-            className="font-extralight text-primary hover:underline underline-offset-2 text-xs"
+            className="font-extralight text-primary hover:underline underline-offset-2 max-sm:text-xs"
             href="/about"
           >
             About
           </Link>
           <Link
-            className="font-extralight text-primary hover:underline underline-offset-2 text-xs"
+            className="font-extralight text-primary hover:underline underline-offset-2 max-sm:text-xs"
             href="/projects"
           >
             Projects
           </Link>
           <Link
-            className="font-extralight text-primary hover:underline underline-offset-2 text-xs"
+            className="font-extralight text-primary hover:underline underline-offset-2 max-sm:text-xs"
             href="/contact"
           >
             Contact
