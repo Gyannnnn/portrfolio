@@ -4,6 +4,7 @@ import Projects from "./components/projects/Projects";
 import Connectme from "./components/coneectme/Connectme";
 
 export default function page() {
+  console.log(process.env.EMAIL_PASSWORD);
   return (
     <div className="min-h-[100vh] w-[100vw] bg-secondary dark:bg-black flex flex-col items-center ">
       <div className="w-[67vw]  h-80 flex flex-col items-start justify-around mt-4">
