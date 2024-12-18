@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar.tsx/Navbar";
 import { ThemeProvider } from "./components/theme-provider";
-import { Toaster } from "@/components/ui/toaster"
-
+import { Toaster } from "@/components/ui/toaster";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +38,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
+
           {children}
+          <SpeedInsights />
           <Toaster />
         </ThemeProvider>
       </body>
