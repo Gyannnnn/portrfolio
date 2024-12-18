@@ -15,7 +15,7 @@ export default function Projects() {
               width={500}
               height={500}
               alt="Picture of the author"
-              className="rounded-t-lg "
+              className="rounded-t-lg filter grayscale hover:grayscale-0 "
             />
             <h1 className="px-4 pb-4 font-inter text-3xl">Project Title</h1>
             <p className="px-4 pb-4">
@@ -33,7 +33,7 @@ export default function Projects() {
               width={500}
               height={500}
               alt="Picture of the author"
-              className="rounded-t-lg"
+              className="rounded-t-lg filter grayscale hover:grayscale-0"
             />
             <h1 className="px-4 pb-4 font-inter text-3xl">Project Title</h1>
             <p className="px-4 pb-4">
