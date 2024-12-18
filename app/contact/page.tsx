@@ -95,6 +95,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     placeholder="Enter Your Email"
+                    type="email"
                   />
                 </div>
                 <div className="flex w-full flex-col space-y-1.5">
