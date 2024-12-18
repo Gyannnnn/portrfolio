@@ -9,13 +9,12 @@ import { IoPauseCircleOutline } from "react-icons/io5";
 
 export default function Navbar() {
   const [played, setPlayed] = useState(false);
-  const audioRef = useRef(null);
-
+  const audioRef = useRef<HTMLAudioElement | null>(null); 
   function playSound() {
     if (!audioRef.current) {
-      // Initialize audio only once
+     
       audioRef.current = new Audio("/bgm_portfolio.mp3");
-      audioRef.current.loop = true; // Enable infinite looping
+      audioRef.current.loop = true; 
     }
 
     if (played) {
