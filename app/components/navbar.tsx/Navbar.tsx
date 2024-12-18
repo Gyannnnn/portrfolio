@@ -36,19 +36,19 @@ export default function Navbar() {
            <span className="text-green-500 font-extrabold">G</span><span className="text-yellow-500 font-extrabold">Y</span><span className="font-sans italic font-extrabold line-through">A</span><span className="text-red-500 font-extrabold">N</span>
           </Link>
           <Link
-            className="font-extralight text-primary hover:underline underline-offset-2 "
+            className="font-extralight text-primary hover:underline underline-offset-2 text-xs"
             href="/about"
           >
             About
           </Link>
           <Link
-            className="font-extralight text-primary hover:underline underline-offset-2"
+            className="font-extralight text-primary hover:underline underline-offset-2 text-xs"
             href="/projects"
           >
             Projects
           </Link>
           <Link
-            className="font-extralight text-primary hover:underline underline-offset-2"
+            className="font-extralight text-primary hover:underline underline-offset-2 text-xs"
             href="/contact"
           >
             Contact

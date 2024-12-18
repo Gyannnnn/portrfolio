@@ -16,7 +16,7 @@ export function ModeToggle() {
       {theme === "dark" ? (
         <Sun className="h-6 w-6 text-sm text-primary " />
       ) : (
-        <WiMoonAltNew className="h-6 w-6 text-white font-light text-black text-sm" />
+        <WiMoonAltNew className="h-6 w-6  font-light text-black text-sm" />
       )}
     </div>
   );
