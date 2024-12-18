@@ -5,6 +5,7 @@ import Navbar from "./components/navbar.tsx/Navbar";
 import { ThemeProvider } from "./components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Navbar />
 
           {children}
+          <Analytics/>
           <SpeedInsights />
           <Toaster />
         </ThemeProvider>
