@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="bg-secondary text-white h-16 flex justify-around ">
+    <div className="bg-secondary text-white h-16 w-screen flex justify-around ">
       <div className="flex items-center justify-center">
         <div className="flex justify-center items-center gap-5 sm:gap-10">
           <div className="flex items-center justify-center">
@@ -41,7 +41,7 @@ export default function Navbar() {
               <span className="text-red-500 font-extrabold">N</span>
             </Link>
           </div>
-          <div className="flex justify-center items-center sm:gap-10 max-sm:gap-5">
+          <div className="flex justify-center items-center sm:gap-10 max-sm:gap-2">
             <Link
               className="font-extralight max-sm:font-light text-primary hover:underline underline-offset-2 max-sm:text-sm"
               href="/about"
@@ -63,7 +63,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="flex items-center sm:gap-10 gap-5">
+      <div className="flex items-center sm:gap-10 gap-2">
         <Link
           className="text-lg text-primary"
           href="https://github.com/Gyannnnn"
