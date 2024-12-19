@@ -39,6 +39,7 @@ export async function PUT(req: NextRequest) {
       { message: "Message sent successfully." },
       { status: 200 }
     );
+    
   } catch (error: unknown) {
     if (error instanceof Error) {
       console.error("Error in sending email:", error);
@@ -53,5 +54,5 @@ export async function PUT(req: NextRequest) {
       { status: 500 }
     );
   }
-      
+
 }
