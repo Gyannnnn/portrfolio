@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="min-h-[80vh] w-[67vw]   mt-20 mb-10 flex flex-col justify-around gap-5">
+    <div className="min-h-[80vh] sm:w-[67vw]   mt-20 mb-10 flex flex-col justify-around gap-5">
       <h1 className="font-inter font-extrabold text-4xl">Projects</h1>
-      <div className="flex justify-center items-center gap-4">
+      <div className="flex max-sm:flex-col justify-center items-center gap-4">
         <Link href="/projects">
-          <Card className="w-[33vw] flex flex-col gap-4 border">
+          <Card className="sm:w-[33vw] max-sm:w-[90vw] flex flex-col gap-4 border">
             <Image
               src="/images/chatgpt.webp"
               width={500}
@@ -27,7 +27,7 @@ export default function Projects() {
           </Card>
         </Link>
         <Link href="/projects">
-          <Card className="w-[33vw] flex flex-col gap-4 border">
+          <Card className="sm:w-[33vw] max-sm:w-[90vw] flex flex-col gap-4 border">
             <Image
               src="/images/chatgpt.webp"
               width={500}
