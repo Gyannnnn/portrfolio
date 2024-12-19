@@ -10,42 +10,35 @@ import Experiance from "../components/experiance/Experiance";
 
 export default function About() {
   return (
-    <div className="min-h-[100vh] w-screen bg-secondary dark:bg-black flex flex-col items-center ">
-      <div className="w-[67vw] flex flex-col items-start justify-center gap-10 mt-10">
+    <div className="min-h-[100vh] w-screen bg-secondary dark:bg-black flex flex-col items-center pt-16">
+      <div className="w-[67vw] max-xl:w-[80vw]  min-h-[100vh] dark:bg-black flex flex-col lg:items-start lg:justify-start gap-10 mt-10">
         <h1 className="font-inter text-4xl">About Me</h1>
-        <h1 className="font-inter text-3xl">
+        <h1 className="font-inter  text-4xl">
           I{" "}
           <span className="text-4xl hover:cursor-wait hover:grayscale">❤️</span>{" "}
-          To Code
+          to Code
         </h1>
-        <div className="flex max-h-80 relative group">
-          <div className="flex flex-col items-start justify-center gap-10 w-[67vw] text-lg">
-            <p className="w-[45vw] tracking-tight">
-              I am a proficient full-stack web developer specializing in
-              blockchain and artificial intelligence (AI) with 8 years of
-              experience. I excel in crafting secure, scalable web applications
-              that leverage blockchain for decentralized solutions. I integrate
-              AI technologies for advanced analytics and machine learning,
-              enhancing user interaction and operational efficiency. My passion
-              lies in delivering innovative, cutting-edge solutions that drive
-              technological advancement and business success.
+        <div className="flex min-h-80  w-[67vw] max-lg:w-[80vw] relative group max-lg:items-center max-lg:justify-center  max-lg:flex-col-reverse ">
+          <div className="flex flex-col max-lg:gap-5 gap-10  text-lg ">
+            <p className="w-[45vw] max-lg:w-[70vw] max-md:w-[80vw]   lg:tracking-tight">
+            I am a passionate full-stack web developer with proficiency in the MERN stack and a strong interest in blockchain and artificial intelligence (AI). As a 2nd-year Information Technology student, I have been actively building secure and scalable web applications, leveraging technologies like Node.js, Express.js, MongoDB, and React. I'm exploring blockchain to create decentralized solutions and integrating AI technologies to enable advanced analytics and improve user experiences. I thrive on crafting innovative solutions and am driven by a commitment to continuous learning and contributing to technological advancement.
             </p>
             <Link className="underline" href="/resume">
               Download Resume
             </Link>
           </div>
           <Image
-            className="rounded-xl drop-shadow-sm mb-10 absolute top-[-60px] right-0 transition-transform duration-500 group-hover:scale-105"
+            className="rounded-xl drop-shadow-sm mb-10 xl:absolute xl:top-[-60px] xl:right-1  transition-transform duration-500 group-hover:scale-105"
             src="/images/me.jpg"
-            height={265}
-            width={265}
+            height={280}
+            width={280}
             alt="me"
           />
         </div>
       </div>
       <div className="flex flex-col ">
         <h1 className="text-2xl mt-5 mb-5">Details</h1>
-        <div className="flex h-screen w-[67vw]">
+        <div className="flex  max-xl:flex-col max-h-screen w-[67vw]">
           <div className=" w-[30vw] flex flex-col items-start justify-start">
             <Card className="w-[28vw] min-h-96 bg-secondary dark:bg-black flex flex-col justify-around pl-5  drop-shadow-3xl hover:cursor-pointer pt-5 pb-5">
               <div>
@@ -98,7 +91,7 @@ export default function About() {
             </Card>
             <div className="h-60 w-[28vw] bg-secondary dark:bg-black mt-5">
               <h1 className="text-2xl">Stacks</h1>
-              <div className="mt-5">
+              <div className="mt-5 max-lg:mt-0">
                 <span className="mr-2">
                   <Button >Next Js</Button>
                 </span>
@@ -151,7 +144,7 @@ export default function About() {
             </div>
             <div className="h-60 w-[28vw] bg-secondary dark:bg-black mt-5">
               <h1 className="text-2xl">Intrests</h1>
-              <div className="mt-5">
+              <div className="mt-5 max-lg:mt-0">
                 <span className="mr-1">
                   <Button >Trekking</Button>
                 </span>

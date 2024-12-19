@@ -6,7 +6,7 @@ import Connectme from "./components/coneectme/Connectme";
 export default function page() {
   
   return (
-    <div className="min-h-[100vh] w-[100vw] bg-secondary dark:bg-black flex flex-col items-center ">
+    <div className="min-h-[100vh] w-[100vw] bg-secondary dark:bg-black flex flex-col items-center pt-20 ">
       <div className="sm:w-[67vw] max-sm:w-[90vw]  min-h-80 flex flex-col items-start justify-around sm:mt-4 max-sm:mt-10">
         <h1 className="font-inter text-4xl pb-4 font-extralight max-sm:text-4xl max-sm:mb-5">Gyanaranjan Patra</h1>
         <p className="font-inter  text-lg text-gray-800 dark:text-white max-sm:tracking-tight">

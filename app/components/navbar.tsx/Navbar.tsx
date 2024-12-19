@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="bg-secondary dark:bg-black text-white h-16 w-screen flex justify-around ">
+    <div className="fixed top-0 z-10 bg-secondary/60 dark:bg-black/60 text-white h-16 w-screen flex justify-around backdrop-blur-lg shadow-sm ">
       <div className="flex items-center justify-center">
         <div className="flex justify-center items-center gap-2 sm:gap-10">
           <div className="flex items-center justify-center">

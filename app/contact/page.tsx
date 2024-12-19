@@ -69,7 +69,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="w-screen h-screen dark:bg-black bg-secondary flex items-start justify-center pt-10">
+    <div className="w-screen h-screen dark:bg-black bg-secondary flex items-start justify-center pt-20">
       <div className="w-[67vw] h-[70vh] flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col items-center justify-center gap-5">
           <h1 className="sm:text-6xl max-sm:text-4xl font-bold">Get In Touch</h1>
