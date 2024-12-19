@@ -6,6 +6,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Projects from "../components/projects/Projects";
 
+import Experiance from "../components/experiance/Experiance";
+
 export default function About() {
   return (
     <div className="min-h-[100vh] w-screen bg-secondary dark:bg-black flex flex-col items-center ">
@@ -167,7 +169,10 @@ export default function About() {
             </div>
           </div>
 
-          <Card className="bg-secondary dark:bg-black w-[37vw]"></Card>
+          <Card className="bg-secondary dark:bg-black w-[37vw] min-h-96 pl-5 flex flex-col">
+            <h1 className="text-xl font-bold mt-2 mb-2">Experiance</h1>
+          <Experiance/>
+          </Card>
 
         </div>
         <Projects/>
