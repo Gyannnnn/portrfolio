@@ -16,6 +16,8 @@ const eslintConfig = [
       "@typescript-eslint/no-explicit-any": "off", // Disable the rule entirely
       // OR
       // "@typescript-eslint/no-explicit-any": "warn", // Show a warning instead of an error
+      
+      "react/no-unescaped-entities": "off", // Disable the rule for unescaped entities
     },
   },
 ];
