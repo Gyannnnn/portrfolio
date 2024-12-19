@@ -108,7 +108,7 @@ export default function Contact() {
             </Link>
           </div>
         </div>
-        <Card className="sm:w-[450px] max-sm:w-[350px] pt-10 drop-shadow-sm">
+        <Card className="sm:w-[450px] max-sm:w-[340px] pt-10 drop-shadow-sm">
           <CardContent>
             <form onSubmit={handleSubmit}>
               <div className="grid w-full items-center gap-4">
