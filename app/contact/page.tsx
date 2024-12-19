@@ -14,6 +14,8 @@ import { Label } from "@/components/ui/label";
 
 import { useToast } from "@/hooks/use-toast";
 
+import axios from "axios";
+
 export default function Contact() {
   const { toast } = useToast();
 
@@ -33,7 +35,7 @@ export default function Contact() {
     }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
     if (!formdata.email.trim() || !formdata.message.trim()) {
@@ -43,14 +45,27 @@ export default function Contact() {
       return;
     }
 
-    toast({
-      description: "Your message has been sent successfully!",
-    });
-    console.log("Form Data Submitted:", formdata);
-    setFormData({
-      email: "",
-      message: "",
-    });
+    try {
+      const response = await axios.put("/api/v1/contact", formdata);
+
+      if (response.status === 200) {
+        toast({
+          description: "Your message has been sent successfully to Gyanaranjan!",
+        });
+        // Clear the form
+        setFormData({
+          email: "",
+          message: "",
+        });
+        console.log("Message Sent Successfully");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        description: "Failed to send the message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
@@ -62,27 +77,38 @@ export default function Contact() {
             <Link
               className="text-blue-600 text-3xl"
               href="https://www.linkedin.com/in/higyan"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin />
             </Link>
-            <Link className="text-3xl" href="https://github.com/Gyannnnn">
+            <Link
+              className="text-3xl"
+              href="https://github.com/Gyannnnn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub />
             </Link>
             <Link
               className="text-3xl text-black dark:text-white"
               href="https://x.com/hi_gyaan?s=08"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaSquareXTwitter />
             </Link>
             <Link
               className="text-3xl text-red-600"
               href="https://www.reddit.com/u/gyan-css"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaReddit />
             </Link>
           </div>
         </div>
-        <Card className="w-[450px] pt-10">
+        <Card className="w-[450px] pt-10 drop-shadow-sm">
           <CardContent>
             <form onSubmit={handleSubmit}>
               <div className="grid w-full items-center gap-4">
