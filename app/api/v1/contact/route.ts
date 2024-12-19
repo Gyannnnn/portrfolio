@@ -39,11 +39,19 @@ export async function PUT(req: NextRequest) {
       { message: "Message sent successfully." },
       { status: 200 }
     );
-  } catch (error: any) {
-    console.error("Error in sending email:", error);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error("Error in sending email:", error);
+      return NextResponse.json(
+        { message: "Internal Server Error", error: error.message },
+        { status: 500 }
+      );
+    }
+    console.error("Unexpected error:", error);
     return NextResponse.json(
-      { message: "Internal Server Error", error: error.message },
+      { message: "Internal Server Error", error: "Unknown error occurred." },
       { status: 500 }
     );
   }
+      
 }
