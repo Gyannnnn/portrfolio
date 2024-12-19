@@ -60,6 +60,15 @@ export default {
         inter: ["Inter", "sans-serif"], // Add the Inter font
       },
     },
+    animation: {
+      '3d-spin': '3d-spin 1s ease-in-out',
+    },
+    keyframes: {
+      '3d-spin': {
+        '0%, 100%': { transform: 'rotateY(0deg) rotateX(0deg)' },
+        '50%': { transform: 'rotateY(180deg) rotateX(10deg)' },
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
