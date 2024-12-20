@@ -21,7 +21,7 @@ export default async function page({ params }: { params: { id: string } }) {
               <h1>Technologies</h1>
               <div>
                 {data.teckstack.map((item, index) => (
-                  <div>{item}</div>
+                  <div key={index}>{item}</div>
                 ))}
               </div>
               <Link href={data.githubLink}>Github</Link>
