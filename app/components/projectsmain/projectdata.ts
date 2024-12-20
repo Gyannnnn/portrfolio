@@ -15,7 +15,7 @@ const projectdata:Project[] = [
         title: "Project 1",
         logo: "/images/experiance/ecel.png",
         description: "A comprehensive full-stack web application designed to manage tasks, track progress, and boost team productivity using cutting-edge technologies.",
-        teckstack: ["Node.js", "Express.js", "MongoDB", "TypeScript"],
+        teckstack: ["Node.js", "Express.js", "MongoDB", "TypeScript","TypeScript","TypeScript","TypeScript","TypeScript","TypeScript","TypeScript"],
         githubLink:"https://github.com/Gyannnnn/portrfolio"
     },
     {

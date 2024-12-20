@@ -20,7 +20,7 @@ export default function About() {
         </h1>
         <div className="flex min-h-80   max-sm:w-[90vw] max-xl:w-[80vw] max-xl:justify-between w-[67vw] max-lg:w-[80vw] relative group max-lg:items-center max-lg:justify-center xl:gap-16  max-lg:flex-col-reverse ">
           <div className="flex flex-col max-lg:gap-5 gap-10 max-sm:w-[90vw] text-lg  ">
-            <p className="w-[45vw] max-lg:w-[70vw] max-md:w-[80vw] max-sm:tracking-tight   lg:tracking-tight">
+            <p className="w-[45vw] max-lg:w-[70vw] max-md:w-[80vw] max-sm:tracking-wider  max-sm:pl-5   lg:tracking-tight">
             I am a passionate full-stack web developer with proficiency in the MERN stack and a strong interest in blockchain and artificial intelligence (AI). As a 2nd-year Information Technology student, I have been actively building secure and scalable web applications, leveraging technologies like Node.js, Express.js, MongoDB, and React. I'm exploring blockchain to create decentralized solutions and integrating AI technologies to enable advanced analytics and improve user experiences. I thrive on crafting innovative solutions and am driven by a commitment to continuous learning and contributing to technological advancement.
             </p>
             <Link className="underline" href="/resume">
