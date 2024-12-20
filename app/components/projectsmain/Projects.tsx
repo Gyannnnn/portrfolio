@@ -3,13 +3,16 @@ import projectdata from "./projectdata";
 import Image from "next/image";
 
 
+
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Projects() {
   return (
     <div className="flex flex-col gap-10 hover:cursor-pointer">
       {projectdata.map((item, index) => (
-        <Card>
+        <Link className="bg-red-900 h-96 w-96" href={`/projects/${item.id}`}>
+        <Card className="rounded-md">
           <div className="flex items-center justify-start">
             <Image
               src="/images/experiance/enigma1.png"
@@ -29,7 +32,7 @@ export default function Projects() {
             ))
             
             }</div>
-        </Card>
+        </Card></Link>
       ))}
     </div>
   );
