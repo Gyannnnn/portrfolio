@@ -3,16 +3,6 @@ import projectdata from '@/app/components/projectsmain/projectdata';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Define the Project type
-type Project = {
-  id: number;
-  title: string;
-  logo: string;
-  description: string;
-  teckstack: string[];
-  githubLink: string;
-};
-
 export default async function ProjectDetailsPage({ params }: { params: { id: string } }) {
   const { id } = params;
 
