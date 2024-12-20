@@ -4,10 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Page({ params }: { params: { id: string } }) {
-  const projectId = parseInt(params.id, 10); // Convert the id to a number
-  const data = projectdata.find((item) => item.id === projectId); // Find the project
+  // Convert the id from params to a number
+  const projectId = parseInt(params.id, 10);
+  const data = projectdata.find((item) => item.id === projectId);
 
-  // Handle the case where the project doesn't exist
+  // Handle case where project is not found
   if (!data) {
     return (
       <div className="h-screen w-screen flex items-center justify-center bg-black">
