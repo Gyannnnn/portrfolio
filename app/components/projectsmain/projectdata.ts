@@ -1,4 +1,15 @@
-const projectdata = [
+
+type Project = {
+    id: number;
+    title: string;
+    logo: string;
+    description: string;
+    teckstack: string[];
+    githubLink:string
+  };
+
+
+const projectdata:Project[] = [
     {
         id:1,
         title: "Project 1",

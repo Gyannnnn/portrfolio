@@ -4,9 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Page({ params }: { params: { id: string } }) {
-  const projectId = parseInt(params.id, 10);
-  const data = projectdata.find((item) => item.id === projectId);
+  const projectId = parseInt(params.id, 10); // Convert the id to a number
+  const data = projectdata.find((item) => item.id === projectId); // Find the project
 
+  // Handle the case where the project doesn't exist
   if (!data) {
     return (
       <div className="h-screen w-screen flex items-center justify-center bg-black">
@@ -28,11 +29,20 @@ export default function Page({ params }: { params: { id: string } }) {
         </Link>
         <div>
           <h1 className="text-3xl font-bold text-white mb-4">{data.title}</h1>
-          <Image src={data.logo} alt="image" height={300} width={300} className="rounded-md" />
+          <Image
+            src={data.logo}
+            alt="Project Image"
+            height={300}
+            width={300}
+            className="rounded-md"
+          />
           <h2 className="text-xl text-white mt-4">Technologies</h2>
           <div className="flex flex-wrap gap-2">
             {data.teckstack.map((tech, index) => (
-              <span key={index} className="bg-black text-white px-3 py-1 rounded-md text-sm">
+              <span
+                key={index}
+                className="bg-black text-white px-3 py-1 rounded-md text-sm"
+              >
                 {tech}
               </span>
             ))}
