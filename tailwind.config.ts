@@ -61,12 +61,12 @@ export default {
       },
     },
     animation: {
-      '3d-spin': '3d-spin 1s ease-in-out',
+      heartbeat: "heartbeat 1s infinite",
     },
     keyframes: {
-      '3d-spin': {
-        '0%, 100%': { transform: 'rotateY(0deg) rotateX(0deg)' },
-        '50%': { transform: 'rotateY(180deg) rotateX(10deg)' },
+      heartbeat: {
+        "0%, 100%": { transform: "scale(1)", opacity: "1" },
+        "50%": { transform: "scale(1.2)", opacity: "0.7" },
       },
     },
   },
