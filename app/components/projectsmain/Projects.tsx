@@ -28,8 +28,8 @@ export default function Projects() {
               </p>
             </div>
           </div>
-          <div className="flex sm:justify-between max-sm:flex-col max-sm:gap-2">
-            <div className="flex gap-2 max-sm:flex-wrap pt-5">
+          <div className="flex sm:justify-between items-center max-sm:flex-col max-sm:gap-2">
+            <div className="flex gap-2 max-sm:flex-wrap pt-5 flex-wrap">
               {item.teckstack.map((item2, index2) => (
                 <span
                   key={index2}

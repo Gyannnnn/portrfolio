@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Projects from "./components/projects/Projects";
 import Connectme from "./components/coneectme/Connectme";
 
 export default function page() {
+  alert("This Website is under developement phase")
   return (
     <div className="min-h-[100vh] w-[100vw] bg-secondary dark:bg-black flex flex-col items-center pt-20 ">
       <div className="sm:w-[67vw] max-sm:w-[90vw] min-h-80 flex flex-col items-start justify-around sm:mt-4 max-sm:mt-10">

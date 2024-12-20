@@ -162,7 +162,7 @@ export default function About() {
             </div>
           </div>
 
-          <Card className="bg-secondary dark:bg-black  min-w-[37vw] min-h-96 pl-5 flex flex-col max-xl:items-start">
+          <Card className="bg-secondary dark:bg-black   min-h-96 pl-5 flex flex-col max-xl:items-start">
             <h1 className="text-xl font-bold mt-2 mb-2">Experiance</h1>
           <Experiance/>
           </Card>
