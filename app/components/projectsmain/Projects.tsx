@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <div className="flex flex-col gap-10 hover:cursor-pointer">
       {projectdata.map((item, index) => (
-        <Link key={index} className="bg-red-900 h-96 w-96" href={`/projects/${item.id}`}>
+        <Link key={index} className="bg-red-900 h-96 w-96" href={`/projects/${(item.id).toString()}`}>
         <Card key={index} className="rounded-md">
           <div className="flex items-center justify-start">
             <Image
