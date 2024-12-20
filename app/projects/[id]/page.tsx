@@ -17,11 +17,14 @@ export default async function page({ params }: { params: { id: string } }) {
           <h1>{data.title}</h1>
           <Image src={data.logo} alt="image" height={300} width={300} />
           <div>
-            <h1>Technologies</h1>
             <div>
-              {data.teckstack.map((item, index) => (
-                <div>{item}</div>
-              ))}
+              <h1>Technologies</h1>
+              <div>
+                {data.teckstack.map((item, index) => (
+                  <div>{item}</div>
+                ))}
+              </div>
+              <Link href={data.githubLink}>Github</Link>
             </div>
             <h1>Description</h1>
             <p>{data.description}</p>
