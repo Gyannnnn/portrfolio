@@ -12,7 +12,7 @@ export default function Projects() {
       <h1 className="font-inter font-extrabold text-4xl">Projects</h1>
       <div className="flex max-sm:flex-col justify-center items-center gap-4">
         {data.slice(0, 2).map((project, index) => (
-          <Card className="sm:w-[33vw] max-sm:w-[90vw] flex flex-col gap-4 border h-[480px] rounded-xl">
+          <Card key={index} className="sm:w-[33vw] max-sm:w-[90vw] flex flex-col gap-4 border h-[480px] rounded-xl">
             <div className="h-[250px] w-full overflow-hidden">
               <Image
                 src={project.logo}
