@@ -52,7 +52,7 @@ export default function Contact() {
         toast({
           description: "Your message has been sent successfully to Gyanaranjan!",
         });
-        // Clear the form
+        
         setFormData({
           email: "",
           message: "",
