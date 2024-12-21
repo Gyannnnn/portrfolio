@@ -70,12 +70,14 @@ export default function Contact() {
 
   return (
     <div className="w-screen h-screen dark:bg-black bg-secondary flex items-start justify-center pt-20">
-      <div className="w-[67vw] h-[70vh] flex flex-col items-center justify-center gap-10">
-        <div className="flex flex-col items-center justify-center gap-5">
-          <h1 className="sm:text-6xl max-sm:text-4xl font-bold">Get In Touch</h1>
+      <div className="w-[67vw] h-[70vh] flex flex-col items-center justify-center gap-10  mt-20" >
+        
+        <Card className="sm:w-[450px] w-[500px] max-sm:w-[340px] pt-5 drop-shadow-sm mb-10">
+        <div className="flex flex-col items-center justify-center gap-5 pb-16">
+          <h1 className="sm:text-5xl max-sm:text-4xl font-bold">Get In Touch</h1>
           <div className="flex gap-5">
             <Link
-              className="text-blue-600 text-3xl max-sm:text-2xl"
+              className="text-blue-600 text-4xl max-sm:text-2xl"
               href="https://www.linkedin.com/in/higyan"
               target="_blank"
               rel="noopener noreferrer"
@@ -83,7 +85,7 @@ export default function Contact() {
               <FaLinkedin />
             </Link>
             <Link
-              className="text-3xl max-sm:text-2xl"
+              className="text-4xl max-sm:text-2xl"
               href="https://github.com/Gyannnnn"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,7 +93,7 @@ export default function Contact() {
               <FaGithub />
             </Link>
             <Link
-              className="text-3xl text-black dark:text-white max-sm:text-2xl"
+              className="text-4xl text-black dark:text-white max-sm:text-2xl"
               href="https://x.com/hi_gyaan?s=08"
               target="_blank"
               rel="noopener noreferrer"
@@ -99,7 +101,7 @@ export default function Contact() {
               <FaSquareXTwitter />
             </Link>
             <Link
-              className="text-3xl text-red-600 max-sm:text-2xl"
+              className="text-4xl text-red-600 max-sm:text-2xl"
               href="https://www.reddit.com/u/gyan-css"
               target="_blank"
               rel="noopener noreferrer"
@@ -108,7 +110,6 @@ export default function Contact() {
             </Link>
           </div>
         </div>
-        <Card className="sm:w-[450px] max-sm:w-[340px] pt-10 drop-shadow-sm">
           <CardContent>
             <form onSubmit={handleSubmit}>
               <div className="grid w-full items-center gap-4">
