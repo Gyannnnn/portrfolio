@@ -12,10 +12,10 @@ type Project = {
 const projectdata:Project[] = [
     {
         id:1,
-        title: "Project 1",
-        logo: "/images/experiance/ecel.png",
+        title: "Portfolio App",
+        logo: "/projects/portfolio.png",
         description: "A comprehensive full-stack web application designed to manage tasks, track progress, and boost team productivity using cutting-edge technologies.",
-        teckstack: ["Node.js", "Express.js", "MongoDB", "TypeScript","TypeScript","TypeScript","TypeScript","TypeScript","TypeScript","TypeScript"],
+        teckstack: ["NextJs","ShadcnUI","TailwindCSS","Typescript","NodeMailer"],
         githubLink:"https://github.com/Gyannnnn/portrfolio"
     },
     {

@@ -11,12 +11,12 @@ export default function page() {
           Gyanaranjan Patra
         </h1>
         <p className="font-inter text-lg text-gray-800 dark:text-white max-sm:tracking-tight">
-          Hello! am budding Full-Stack Web Developer and a second-year IT
-          student with a keen interest in AI and Blockchain technologies. With
-          hands-on experience in the MERN stack, I specialize in developing
+          Hello! i am a budding Full-Stack Web Developer and an IT undergrad of
+          VSSUT Burla with a keen interest in DevOps & Blockchain technologies.
+          With hands-on experience in the MERN stack, I specialize in developing
           efficient and user-friendly web applications. I am committed to
           continuous learning and exploration of cutting-edge technologies to
-          create impactful AI and blockchain solutions that enhance user
+          create impactful DevOps & blockchain solutions that enhance user
           experiences and system performance. I am available to dedicate 25-30
           hours per week, ensuring flexibility and effective collaboration in
           any time zone.

@@ -24,15 +24,15 @@ export default function About() {
           <div className="flex flex-col max-lg:gap-5 gap-10 max-sm:w-[90vw] text-lg  ">
             <p className="w-[45vw] max-lg:w-[70vw] max-md:w-[80vw] max-sm:tracking-wider  max-sm:pl-2   lg:tracking-tight">
               I am a passionate full-stack web developer with proficiency in the
-              MERN stack and a strong interest in blockchain and artificial
-              intelligence (AI). As a 2nd-year Information Technology student, I
-              have been actively building secure and scalable web applications,
-              leveraging technologies like Node.js, Express.js, MongoDB, and
-              React. I'm exploring blockchain to create decentralized solutions
-              and integrating AI technologies to enable advanced analytics and
-              improve user experiences. I thrive on crafting innovative
-              solutions and am driven by a commitment to continuous learning and
-              contributing to technological advancement.
+              MERN stack and a strong interest in blockchain and DevOps . As an
+              Information Technology student of VSSUT Burla , I have been
+              actively building secure and scalable web applications, leveraging
+              technologies like NextJs, Typescript , Node.js, Express.js,
+              MongoDB, and ReactJs. I'm exploring blockchain and DevOps to
+              create decentralized solutions to improve user experiences. I
+              thrive on crafting innovative solutions and am driven by a
+              commitment to continuous learning and contributing to
+              technological advancement.
             </p>
             <Link className="underline" href="/resume">
               Download Resume

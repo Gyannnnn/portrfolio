@@ -15,11 +15,11 @@ export default function Projects() {
         >
           <div className="flex items-center justify-start gap-5 ">
             <Image
-              src="/images/experiance/enigma2.png"
+              src={item.logo}
               height={130}
               width={130}
               alt="image"
-              className="rounded-full max-sm:hidden"
+              className="rounded-md max-sm:hidden"
             />
             <div className=" h-28 flex flex-col items-start justify-center gap-2 max-sm:pt-5">
               <h1 className="text-xl font-inter font-bold">{item.title}</h1>
