@@ -125,7 +125,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="h-20 w-[28vw] max-xl:w-[35vw] max-lg:w-[80vw] bg-secondary dark:bg-black mt-5 max-sm:w-[90vw] rounded-md p-4">
+            <div className="h-20 w-[28vw] max-xl:w-[35vw] max-lg:w-[80vw] bg-secondary dark:bg-black mt-5 max-sm:w-[90vw] rounded-md p-4 max-sm:mb-10">
               <h1 className="text-2xl mb-4">Interests</h1>
               <div className="flex flex-wrap gap-2">
                 <Button className="bg-[#1e1e1e] text-white px-3 py-1 rounded-md shadow-md transition-transform hover:bg-gray-700 active:scale-95">
