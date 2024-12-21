@@ -22,7 +22,7 @@ export default function page() {
           any time zone.
         </p>
         <Link
-          className="px-6 py-3 dark:bg-white dark:text-black rounded-md bg-black text-white"
+          className="px-6 py-3 dark:bg-white dark:text-black rounded-md bg-black text-white mt-5"
           href="/about"
         >
           About Me

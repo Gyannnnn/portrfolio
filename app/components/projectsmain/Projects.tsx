@@ -11,7 +11,7 @@ export default function Projects() {
       {projectdata.map((item, index) => (
         <Card
           key={index}
-          className="rounded-xl drop-shadow-sm bg-secondary dark:bg-black mt-2 flex flex-col justify-start gap-5 sm:py-5 px-5 pt-5 relative"
+          className="rounded-xl drop-shadow-sm bg-secondary dark:bg-black mt-2 flex flex-col justify-start max-sm:justify-between gap-5 max-sm:gap-[7.25rem] sm:py-5 px-5 pt-5 relative"
         >
           <div className="flex items-center justify-start gap-5 ">
             <Image
@@ -22,13 +22,13 @@ export default function Projects() {
               className="rounded-full max-sm:hidden"
             />
             <div className=" h-28 flex flex-col items-start justify-center gap-2 max-sm:pt-5">
-              <h1 className="text-xl font-inter font-bold">{item.title}</h1>
+              <h1 className="text-xl font-inter font-bold max-sm:mt-[100px] max-sm:w-[60vw]">{item.title}</h1>
               <p className="font-extralight text-black dark:text-gray-300">
                 {item.dpdescription}
               </p>
             </div>
           </div>
-          <div className="flex sm:justify-between items-center max-sm:flex-col max-sm:gap-2  ">
+          <div className="flex sm:justify-between items-center max-sm:flex-col max-sm:gap-2   max-sm:items-start max-sm:py-4  ">
             <div className="flex gap-2 max-sm:flex-wrap  flex-wrap">
               {item.teckstack.map((item2, index2) => (
                 <span
@@ -44,7 +44,7 @@ export default function Projects() {
             </Link>
           </div>
           {
-              item.ongoing?<div className="bg-red-900 text-white w-24 flex items-center justify-center rounded-md absolute top-1 right-1 ">On Going</div>:<div className="bg-green-900 text-white w-24 flex items-center justify-center rounded-md absolute top-1 right-1">Completed</div>
+              item.ongoing?<div className="bg-red-900 text-white w-24 flex items-center justify-center rounded-md fixed top-[-2px] right-0">On Going</div>:<div className="bg-green-900 text-white w-24 flex items-center justify-center rounded-md fixed top-0 right-0">Completed</div>
 
           }
           

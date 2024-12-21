@@ -15,7 +15,7 @@ const projectdata: Project[] = [
   {
     id: 1,
     title: "Portfolio App",
-    logo: "/projects/portfolio.png",
+    logo:"/projects/portfolio/portfolio.png",
     displayLogo: "/projects/portfolio/dp.png",
     description:
       "Welcome to my portfolio! Built with Next.js, ShadCN UI, TypeScript, and Tailwind CSS, this website is a reflection of modern web development principles combined with clean design aesthetics. It features a responsive layout for seamless browsing across all devices, a theme toggler for effortless switching between light and dark modes, and interactive audio controls that let you play or pause background audio. The user interface is designed to be visually captivating, ensuring an engaging experience. To make communication simple, the contact form is powered by NodeMailer, enabling you to send messages directly through the site. Explore my work and feel free to reach out with any opportunities or feedback!",
@@ -30,7 +30,7 @@ const projectdata: Project[] = [
     ],
     githubLink: "https://github.com/Gyannnnn/portrfolio",
     ongoing: false,
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -72,7 +72,7 @@ const projectdata: Project[] = [
     teckstack: ["React.Js", "Css", "Javascript"],
     githubLink: "https://github.com/Gyannnnn/chennaimath.org",
     ongoing: false,
-    featured: false,
+    featured: true,
   },
   {
     id: 5,
