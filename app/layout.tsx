@@ -6,6 +6,10 @@ import { ThemeProvider } from "./components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react"
+import Footer from "@/components/ui/Footer";
+import {ReactLenis} from "@/lib/lenis"
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      <ReactLenis root>
+        <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
@@ -44,8 +49,10 @@ export default function RootLayout({
           <Analytics/>
           <SpeedInsights />
           <Toaster />
+          <Footer />
         </ThemeProvider>
       </body>
+      </ReactLenis>
     </html>
   );
 }

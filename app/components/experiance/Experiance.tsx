@@ -6,7 +6,7 @@ export default function Experiance() {
   return (
     <div className="experience-container flex flex-col gap-5 pr-2">
       {data.map((item, index) => (
-        <div key={index} className="flex flex-col gap-3">
+        <div key={index} className="flex flex-col gap-3 bg-white/30 dark:bg-[#18181c]/70 backdrop-blur-xl border border-white/30 dark:border-gray-700 rounded-2xl p-4 shadow-md">
           <div className="flex items-center justify-start gap-4">
             <Image
               src={item.logo}

@@ -71,3 +71,39 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.25); /* slate-500/30 */
+  border-radius: 8px;
+  border: 2px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.45);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: rgba(30, 41, 59, 0.5); /* slate-800/50 */
+  border: 2px solid rgba(0,0,0,0.3);
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 41, 59, 0.7);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100,116,139,0.25) transparent;
+}
+html.dark * {
+  scrollbar-color: rgba(30,41,59,0.5) transparent;
+}
